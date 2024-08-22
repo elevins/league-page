@@ -1,6 +1,6 @@
 <script>
     import { dues } from '$lib/utils/helper';
-    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree, oneFour;
+    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree, oneFour, oneFive;
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
     let four, fourOne, fourTwo, fourThree;
@@ -155,6 +155,8 @@
     <p>Week 11 - Trades are not allowed after week 11</p>
     
     <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
+
+    <p>The draft type is snake.</p>
     
     <p>The draft order each year will be determined by Scott Hansen?.</p>
 
@@ -222,9 +224,9 @@
     <h3 bind:this={sevenTwo}>7.2 Payout</h3>
     <p>League payout is structured as follows:</p>
     <ul>
-        <li>1st place: {dues * 14 - 900 * 0.65}$</li>
-        <li>2nd place: {dues * 14 - 900 * 0.25}$</li>
-        <li>3rd place: {dues * 14 - 900 * 0.10}$</li>
+        <li>1st place: {((dues * 14) - dues - (dues * 0.25)) * 0.65}$</li>
+        <li>2nd place: {((dues * 14) - dues - (dues * 0.25)) * 0.25}$</li>
+        <li>3rd place: {((dues * 14) - dues - (dues * 0.25)) * 0.10}$</li>
         <li>Regular season winner: {dues}$</li>
         <li>Weekly high score: {dues * 0.25}$</li>
     </ul>
