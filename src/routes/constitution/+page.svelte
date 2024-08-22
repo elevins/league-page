@@ -107,7 +107,9 @@
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneFour)}>1.4 Trade Deadline</h4>
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
-    
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoOne)}>2.1 Setup</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoTwo)}>2.2 Location</h4>
+
     <h3 class="noUnderscore clickable" on:click={() => goToSection(three)}>Section 3: Scoring</h3>
 
     <h3 class="noUnderscore clickable" on:click={() => goToSection(four)}>Section 4: League Finances</h3>
@@ -156,9 +158,15 @@
     
     <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
 
+    <h3 bind:this={twoOne}>2.1 Setup</h3>
+
     <p>The draft type is snake.</p>
     
     <p>The draft order each year will be determined by Scott Hansen?.</p>
+
+    <h3 bind:this={twoTwo}>2.2 Location</h3>
+
+    <p>The location of the next draft will be determined by the winner of the League.</p>
 
     <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring</h2>
 
