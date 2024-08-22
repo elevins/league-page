@@ -116,6 +116,8 @@
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fourOne)}>4.1 Buy In</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fourTwo)}>4.2 Payout</h4>    
+
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(five)}>Section 5: Punishments</h3>
     
     <hr />
     
@@ -239,7 +241,7 @@
         <li>Weekly high score: {dues * 0.25}$</li>
     </ul>
 
-    <h2 class="sectionHeading" bind:this={four}>Section 5 Punishments</h2>
+    <h2 class="sectionHeading" bind:this={five}>Section 5 Punishments</h2>
     
     <p>All members of the league will submit a punishment to the commissioner. At then end of the season the last place manager will choose three from the list.</p>
     
