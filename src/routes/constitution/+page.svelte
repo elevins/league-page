@@ -231,6 +231,10 @@
         <li>Weekly high score: {dues * 0.25}$</li>
     </ul>
 
+    <h2 class="sectionHeading" bind:this={four}>Section 5 Punishments</h2>
     
+    <p>All members of the league will submit a punishment to the commissioner. At then end of the season the last place manager will choose three from the list.</p>
     
+    <p>The winner of the league will choose from these three which punishment the loser must complete before the draft next season.</p>
+
 </div>
