@@ -222,11 +222,13 @@
     <h3 bind:this={sevenTwo}>7.2 Payout</h3>
     <p>League payout is structured as follows:</p>
     <ul>
-        <li>1st place: {dues * 8}$</li>
-        <li>2nd place: {dues * 3}$</li>
-        <li>3rd place: {dues}$</li>
+        <li>1st place: {dues * 14 - 900 * 0.65}$</li>
+        <li>2nd place: {dues * 14 - 900 * 0.25}$</li>
+        <li>3rd place: {dues * 14 - 900 * 0.10}$</li>
+        <li>Regular season winner: {dues}$</li>
+        <li>Weekly high score: {dues * 0.25}$</li>
     </ul>
-    <p>The regular season winner also recieves a payout equal to the league's yearly buy in.</p>
+
     
     
 </div>
