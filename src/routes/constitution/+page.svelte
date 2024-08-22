@@ -138,9 +138,9 @@
     
     <hr />
     
-    <h2 class="sectionHeading" bind:this={one}>Section 1 Roster Breakdown</h2>
+    <h2 class="sectionHeading" bind:this={one}>Section 1 League Settings</h2>
     
-    <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
+    <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Roster</h3>
     
     <p>14 Total Players</p>
     
@@ -170,10 +170,8 @@
     <p>Waiver order is determined by reverse standings. Waivers clear Wednesday (3 AM EDT)</p>
 
     <p>Waiver Time is 2 Days - Players stay on the waivers for 2 days</p>
-    
-    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
 
-    <h3 bind:this={oneFour}>1.3 Trade Deadline</h3>
+    <h3 bind:this={oneFour}>1.4 Trade Deadline</h3>
     
     <p>Week 11 - Trades are not allowed after week 11</p>
     
@@ -209,9 +207,35 @@
         <li>2-Pt Conversion: +2</li>
     </ul>
 
-    <h3 bind:this={threeOne}>3.1 Passing</h3>
-    <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring). The scoring system will never change without a majority league vote.</p>
-    
+    <p class="underscore">Kicking</p>
+    <ul>
+        <li>FG Made (0-19 yards): +3</li>
+        <li>FG Made (20-29 yards): +3</li>
+        <li>FG Made (30-39 yards): +3</li>
+        <li>FG Made (40-49 yards): +4</li>
+        <li>FG Made (50+ yards): +5</li>
+        <li>PAT Made: +1</li>
+        <li>FG Missed: -1</li>
+        <li>PAT Missed: -1</li>
+    </ul>
+
+    <p class="underscore">Team Defense</p>
+    <ul>
+        <li>Defense TD: +6</li>
+        <li>Points Allowed 0: +10</li>
+        <li>Points Allowed 1-6: +7</li>
+        <li>Points Allowed 7-13: +4</li>
+        <li>Points Allowed 14-20: +1</li>
+        <li>Points Allowed 28-34: -1</li>
+        <li>Points Allowed 35+: -4</li>
+        <li>Sacks: +1</li>
+        <li>Interceptions: +2</li>
+        <li>Fumble Recovery: +2</li>
+        <li>Safety: +2</li>
+        <li>Forced Fumble: +1</li>
+        <li>Blocked Kick: +2</li>
+    </ul>
+
     <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
     
     <h3 bind:this={fourOne}>4.1 Playoffs</h3>
