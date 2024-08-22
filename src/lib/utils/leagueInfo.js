@@ -7,12 +7,8 @@ export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VIT
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Founded in 2023 the NYC + SF Fantasy Football League (need a better name imo), began as we travelled to Denver Colorado to wear traffic cones and draft players.</p>
-  <p>The boys will be traveling to Orlando FL t.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Founded in 2023, the NYC + SF Fantasy Football League began as a travel league with the intention of reuniting once a year as a group to plan a trip together and draft in person.</p>
+  <p>While some members are busy having kids, getting married, and fighting for our country (Thank you for your service Jeff), we try to get everyone together once a year for some fun.</p>
 `;
 
 /*   STEP 3   */
