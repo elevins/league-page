@@ -4,7 +4,7 @@
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
     let four, fourOne, fourTwo, fourThree;
-    let five, fiveOne;
+    let five, fiveOne, fiveTwo;
     let six, sixOne, sixTwo, sixThree;
     let seven, sevenOne, sevenTwo, sevenThree;
 
@@ -118,6 +118,8 @@
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fourTwo)}>4.2 Payout</h4>    
 
     <h3 class="noUnderscore clickable" on:click={() => goToSection(five)}>Section 5: Punishments</h3>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(fiveOne)}>5.1 League Loser</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(fiveTwo)}>5.2 Draft Absences</h4>   
     
     <hr />
     
@@ -242,9 +244,15 @@
     </ul>
 
     <h2 class="sectionHeading" bind:this={five}>Section 5 Punishments</h2>
-    
+
+    <h3 bind:this={fiveOne}>5.1 League Loser</h3>
     <p>All members of the league will submit a punishment to the commissioner. At then end of the season the last place manager will choose three from the list.</p>
     
     <p>The winner of the league will choose from these three which punishment the loser must complete before the draft next season.</p>
+
+    <h3 bind:this={fiveTwo}>5.2 Draft Absences</h3>
+    <p>All members of the league are expected to participate and be present at the draft location on draft day. Sometimes life happens, so after 2 repeated no shows their continued presence will be put to a vote</p>
+    
+    <p>Should they be granted leniency, pending any league sanctions such as added punishments, they will be given another chance. After 3 no shows league removal is automatic.</p>
 
 </div>
