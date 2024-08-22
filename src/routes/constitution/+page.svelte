@@ -236,11 +236,11 @@
     <h3 bind:this={sevenTwo}>4.2 Payout</h3>
     <p>League payout is structured as follows:</p>
     <ul>
-        <li>1st place: {((dues * 14) - dues - (dues * 0.25)) * 0.65}$</li>
-        <li>2nd place: {((dues * 14) - dues - (dues * 0.25)) * 0.25}$</li>
-        <li>3rd place: {((dues * 14) - dues - (dues * 0.25)) * 0.10}$</li>
-        <li>Regular season winner: {dues}$</li>
-        <li>Weekly high score: {dues * 0.25}$</li>
+        <li>1st place: {((dues * 14) - dues - (dues * 0.25)) * 0.65}$ 65% of Winnings after Reg Season Winner and Weekly High Scores</li>
+        <li>2nd place: {((dues * 14) - dues - (dues * 0.25)) * 0.25}$ 25% of Winnings after Reg Season Winner and Weekly High Scores</li>
+        <li>3rd place: {((dues * 14) - dues - (dues * 0.25)) * 0.10}$ 10% of Winnings after Reg Season Winner and Weekly High Scores</li>
+        <li>Regular season winner: {dues}$ (Gets base buy in back) </li>
+        <li>Weekly high score: {dues * 0.25}$ (Each week is 25% of base buy in)</li>
     </ul>
 
     <h2 class="sectionHeading" bind:this={five}>Section 5 Punishments</h2>
