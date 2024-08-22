@@ -109,8 +109,6 @@
     <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(twoOne)}>2.1 Draft Order</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoTwo)}>2.2 Rookie Drafts</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoThree)}>2.3 Draft Day Trades</h4>
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(three)}>Section 3: Scoring</h3>
     
@@ -169,25 +167,49 @@
     
     <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
     
-    <p>Waiver order is determined by reverse standings. Waivers clear Wednesdat (3 AM EDT)</p>
+    <p>Waiver order is determined by reverse standings. Waivers clear Wednesday (3 AM EDT)</p>
 
-    <p>Players stay on waivers for 2 days.</p>
+    <p>Waiver Time is 2 Days - Players stay on the waivers for 2 days</p>
+    
+    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
+
+    <h3 bind:this={oneFour}>1.3 Trade Deadline</h3>
+    
+    <p>Week 11 - Trades are not allowed after week 11</p>
     
     <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
     
     <h3 bind:this={twoOne}>2.1 Draft Order</h3>
-    <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings.</p>
+    <p>The draft order each year will be determined by Scott Hansen?.</p>
 
-    <h3 bind:this={twoTwo}>2.2 Rookie Drafts</h3>
-    <p>Rokkie drafts will consist of 3 round of drafting, with 5 minutes alotted for each pick. To make room for the incoming players, benches will be expanded by (5) spots. These spots will be removed in mid-August, at which point you will need to have cut the necessary players.</p>
-    <p>Any spots not filled during the draft, can be filled immediately afterwards from the waiver wire.</p>
-    
-    <h3 bind:this={twoThree}>2.3 Draft Day Trades</h3>
-    <p>If a trade is being made during the draft, one or both parties can alert the commissioner to pause the draft to allow for extra time to negotiate the trade.</p>
-    
-    <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring System</h2>
+    <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring</h2>
 
-    <h3 bind:this={threeOne}>3.1 Scoring System</h3>
+    <p class="underscore">Passing</p>
+    <ul>
+        <li>Passing Yards: +0.04 per yard (25 yards = 1 point)</li>
+        <li>Passing TD: +4</li>
+        <li>2-Pt Conversion: +2</li>
+        <li>Pass Intercepted: -1</li>
+    </ul>
+
+    <p class="underscore">Rushing</p>
+    <ul>
+        <li>Reception: +0.50</li>
+        <li>Passing Yards: +0.1 per yard (10 yards = 1 point)</li>
+        <li>Receiving TD: +6</li>
+        <li>Receiving 1st Down: 0.50</li>
+        <li>2-Pt Conversion: +2</li>
+    </ul>
+
+    <p class="underscore">Receiving</p>
+    <ul>
+        <li>Passing Yards: +0.1 per yard (10 yards = 1 point)</li>
+        <li>Rushing TD: +6</li>
+        <li>Rushing 1st Down: 0.50</li>
+        <li>2-Pt Conversion: +2</li>
+    </ul>
+
+    <h3 bind:this={threeOne}>3.1 Passing</h3>
     <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring). The scoring system will never change without a majority league vote.</p>
     
     <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
