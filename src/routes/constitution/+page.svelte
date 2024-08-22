@@ -230,10 +230,10 @@
 
     <h2 class="sectionHeading" bind:this={four}>Section 4 League Finances</h2>
     
-    <h3 bind:this={sevenOne}>7.1 Buy In</h3>
+    <h3 bind:this={sevenOne}>4.1 Buy In</h3>
     <p>League buy In is $200.</p>
     
-    <h3 bind:this={sevenTwo}>7.2 Payout</h3>
+    <h3 bind:this={sevenTwo}>4.2 Payout</h3>
     <p>League payout is structured as follows:</p>
     <ul>
         <li>1st place: {((dues * 14) - dues - (dues * 0.25)) * 0.65}$</li>
