@@ -98,10 +98,9 @@
 <div class="constitution">
     <h1 class="noUnderscore">CHYONES CONSTITUTION</h1>
     
-    <h2 class="noUnderscore">UNDER CONSTRUCTION</h2>
+    <h2 class="noUnderscore">Table of Contents</h2>
 
-    <!--
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Section 1: Roster</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Section 1: Roster Breakdown</h3>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneOne)}>1.1 Positional Breakdown</h4>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneOne)}>1.1.1 Position Maximums</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneTwo)}>1.2 Trading</h4>
@@ -150,7 +149,7 @@
     
     <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
     
-    <p>28 Total Players</p>
+    <p>14 Total Players</p>
     
     <p class="underscore">Starters</p>
     <ul>
@@ -160,15 +159,14 @@
         <li>WR</li>
         <li>WR</li>
         <li>TE</li>
-        <li>FLEX (RB/WR/TE)</li>
-        <li>FLEX (RB/WR)</li>
-        <li>D/ST</li>
+        <li>FLEX (W/R/T)</li>
         <li>K</li>
+        <li>DEF</li>
     </ul>
     
-    <p>18 Bench (Expanded by 5 between the keague draft and start of regular season)</p>
+    <p>4 Bench</p>
 
-    <p>1 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
+    <p>1 IR Spot</p>
     
         <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
         
@@ -186,7 +184,7 @@
 
     <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
     
-    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Tradable assets include players, draft picks, and FAAB $.</p>
+    <p>Trading of players is allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Don't be an asshole$.</p>
     
     <h4 bind:this={oneTwoOne}>1.2.1 Trade Collusion</h4>
     <div class="subBlock">
@@ -300,7 +298,5 @@
     
     <h3 bind:this={sevenThree}>7.3 Raising Dues</h3>
     <p>A ⅔ majority vote is required in order to raise league dues. In the event that a manager is no longer financially comfortable with the buyin, finding a co-manager to split the cost is reccomended.</p>
-
-    -->
 
 </div>
