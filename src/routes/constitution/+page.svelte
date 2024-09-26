@@ -236,8 +236,8 @@
     <h3 bind:this={sevenTwo}>4.2 Payout</h3>
     <p>League payout is structured as follows:</p>
     <ul>
-        <li>1st place: {((dues * 14) - dues - (dues * 0.25)*14) * 0.60}$ (65% of winnings after regular season winner and weekly high scores)</li>
-        <li>2nd place: {((dues * 14) - dues - (dues * 0.25)*14) * 0.30}$ (25% of winnings after regular season winner and weekly high scores)</li>
+        <li>1st place: {((dues * 14) - dues - (dues * 0.25)*14) * 0.60}$ (60% of winnings after regular season winner and weekly high scores)</li>
+        <li>2nd place: {((dues * 14) - dues - (dues * 0.25)*14) * 0.30}$ (30% of winnings after regular season winner and weekly high scores)</li>
         <li>3rd place: {((dues * 14) - dues - (dues * 0.25)*14) * 0.10}$ (10% of winnings after regular season winner and weekly high scores)</li>
         <li>Regular season winner: {dues}$ (Gets buy in back) </li>
         <li>Weekly high score: {dues * 0.25}$ (Each week is 25% of a buy in)</li>
