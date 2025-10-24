@@ -5,6 +5,14 @@ import { dynasty } from './utils/helper';
     const today = new Date();
     const resources = [
         {
+            name: "Sleeper FF Info",
+            url: "https://support.sleeper.com/en/collections/410900-fantasy-football",
+            icon: "article",
+            premium: false,
+            separator: true,
+            dynastyOnly: false,
+        },
+        {
             name: "FF Wrapped",
             url: "https://ffwrapped.com/?leagueId=1257072581240946688",
             icon: "insights",
