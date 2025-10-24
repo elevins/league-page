@@ -5,10 +5,10 @@ import { dynasty } from './utils/helper';
     const today = new Date();
     const resources = [
         {
-            name: "FTN Fantasy",
-            url: "https://www.ftnfantasy.com/nfl",
+            name: "FF Wrapped",
+            url: "https://ffwrapped.com/?leagueId=1257072581240946688",
             icon: "insights",
-            premium: true,
+            premium: false,
             separator: true,
         },
         {
