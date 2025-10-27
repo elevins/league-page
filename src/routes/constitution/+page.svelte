@@ -286,7 +286,7 @@
         <li>Pot: 2800$</li>
         <li>1st: 1140$ (60%)</li>
         <li>2nd: 570$ (30%)</li>
-        <li>3rd: 190$ (20%)</li>
+        <li>3rd: 190$ (10%)</li>
         <li>Regular Season Winner: {dues}$</li>
         <li>Weekly Highest Score: 50$/Week</li>
     </ul>
