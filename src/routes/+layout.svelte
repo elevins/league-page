@@ -7,18 +7,18 @@
 
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
-	// HARDCODED VALUES (SAFE)
-	const leagueName = "NYC + SF Fantasy Football";
+	// HARDCODED (SAFE)
+	const leagueName = "Chyones Fantasy League";
 	const description = "Custom Sleeper league with standings, trades, power rankings, and more!";
-	const imageUrl = "https://chyones.com/badge.png";
+	const imageUrl = "https://chyones.com/badge.png";  // ← YOUR IMAGE
 
-	// DYNAMIC PAGE TITLE (from <svelte:head> in each page)
-	let pageTitle = "League Page";
-	$: fullTitle = pageTitle ? `${pageTitle} | ${leagueName}` : leagueName;
+	// DYNAMIC: Get title from page's load() → $page.data.title
+	$: pageTitle = $page.data.title || "League Page";
+	$: fullTitle = pageTitle !== "League Page" ? `${pageTitle} | ${leagueName}` : leagueName;
 </script>
 
+<!-- ONE AND ONLY <svelte:head> -->
 <svelte:head>
-	<!-- Let child pages override <title> -->
 	<title>{fullTitle}</title>
 
 	<!-- iMessage / Social Preview -->
@@ -35,25 +35,6 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={imageUrl} />
 
-	<!-- Image size -->
+	<!-- Image size (helps iMessage) -->
 	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-</svelte:head>
-
-<!-- CAPTURE <title> from child pages -->
-<svelte:head let:head>
-	{#each head.title as title}
-		{@const text = title.children[0]?.text}
-		{#if text}
-			<script>
-				pageTitle = "{text}";
-			</script>
-		{/if}
-	{/each}
-</svelte:head>
-
-<main>
-	<Nav />
-	<slot />
-	<Footer />
-</main>
+	<meta property="og
