@@ -10,10 +10,11 @@
 	const description = "Custom Sleeper league with standings, trades, power rankings, and more!";
 	const imageUrl = "https://chyones.com/badge.png";
 
-	// GET REAL BLOG TITLE FROM DATA
-	$: isBlogPage = $page.url.pathname.startsWith('/blog/');
-	$: blogTitle = isBlogPage && $page.data?.postsData && $page.data?.postID
-		? $page.data.postsData.find(p => p.fields.slug === $page.data.postID)?.fields?.title || "Blog Post"
+	// SAFEST POSSIBLE TITLE LOGIC
+	$: data = $page.data;
+	$: isBlog = data?.postID && Array.isArray(data?.postsData);
+	$: blogTitle = isBlog 
+		? data.postsData.find(p => p?.fields?.slug === data.postID)?.fields?.title 
 		: null;
 
 	$: pageTitle = blogTitle || "League Page";
