@@ -1,30 +1,19 @@
 <!-- src/routes/blog/[slug]/+page.svelte -->
 <script>
     import { FullPost } from "$lib/components";
-    import { onMount } from 'svelte';
+    import { browser } from '$app/environment';
 
     export let data;
+    const { postsData, postID, leagueTeamManagersData } = data;
 
-    // FORCE LOG — RUNS EVERY TIME DATA CHANGES
-    $: {
-        console.log('RAW DATA FROM +page.js:', data);
-        if (data) {
-            console.log('postID:', data.postID);
-            console.log('postsData:', data.postsData);
-            console.log('leagueTeamManagersData:', data.leagueTeamManagersData);
-            if (Array.isArray(data.postsData)) {
-                console.log('First post:', data.postsData[0]);
-                console.log('Found post by slug:', data.postsData.find(p => p?.fields?.slug === data.postID));
-            }
-        }
+    // WILL PRINT IN CONSOLE
+    if (browser) {
+        console.log('PAGE DATA:', data);
+        console.log('postID:', postID);
+        console.log('postsData (array length):', postsData?.length);
+        console.log('First post:', postsData?.[0]);
+        console.log('Found post:', postsData?.find(p => p?.fields?.slug === postID));
     }
-
-    // ALSO LOG ON MOUNT (backup)
-    onMount(() => {
-        setTimeout(() => {
-            console.log('ONMOUNT DEBUG:', data);
-        }, 1000);
-    });
 </script>
 
 <style>
@@ -53,11 +42,7 @@
 </style>
 
 <div id="main">
-    <FullPost 
-        postsData={data.postsData} 
-        postID={data.postID} 
-        leagueTeamManagersData={data.leagueTeamManagersData} 
-    />
+    <FullPost {postsData} {postID} {leagueTeamManagersData} />
     <div class="center">
         <a class="viewAll" href="/blog">View More Blog Posts</a>
     </div>
