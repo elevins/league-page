@@ -1,9 +1,5 @@
 <script>
     import { Posts } from "$lib/components";
-	import { leagueName } from '$lib/utils/helper';
-	import { pageTitle } from '$lib/stores';
-
-	$pageTitle = `Blog | ${leagueName}`;
 
     export let data;
     const {postsData, queryPage, filterKey, leagueTeamManagersData} = data;

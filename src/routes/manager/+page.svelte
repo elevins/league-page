@@ -3,15 +3,9 @@
     import {Manager} from '$lib/components';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
-	import { leagueName } from '$lib/utils/helper';
-	import { pageTitle } from '$lib/stores';
 
 	export let data;
 	const {managers, manager, managersInfo} = data;
-
-	if(manager > -1) {
-		$pageTitle = `${managers[manager].name} | ${leagueName}`;
-	}
 
     onMount(() => {
         if(!managers.length) goto('/');

@@ -1,10 +1,6 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
 	import { Rosters } from '$lib/components'
-	import { leagueName } from '$lib/utils/helper';
-	import { pageTitle } from '$lib/stores';
-
-	$pageTitle = `Rosters | ${leagueName}`;
 
 	export let data;
 	const rostersInfo = data.rostersInfo;

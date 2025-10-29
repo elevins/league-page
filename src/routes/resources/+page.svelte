@@ -1,10 +1,6 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
 	import { News, Resources } from '$lib/components';
-	import { leagueName } from '$lib/utils/helper';
-	import { pageTitle } from '$lib/stores';
-
-	$pageTitle = `Resources | ${leagueName}`;
 
 	export let data;
 	const articlesData = data.articlesData;

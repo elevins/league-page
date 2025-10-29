@@ -1,9 +1,5 @@
 <script>
-    import { dues, leagueName } from '$lib/utils/helper';
-	import { pageTitle } from '$lib/stores';
-
-	$pageTitle = `Constitution | ${leagueName}`;
-
+    import { dues } from '$lib/utils/helper';
     let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
