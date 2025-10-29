@@ -1,16 +1,24 @@
+// src/routes/blog/[slug]/+page.js
+import { contentfulClient } from '$lib/contentful';
 
-import { enableBlog, getBlogPosts, getLeagueTeamManagers } from '$lib/utils/helper';
+export async function load({ params }) {
+	const { slug } = params;
 
-export function load({ fetch, params }) {
-    if(!enableBlog) return false;
-    
-    const postID = params.slug;
-    const postsData = getBlogPosts(fetch);
-    const leagueTeamManagersData = getLeagueTeamManagers();
+	// Fetch blog post from Contentful
+	const blogPost = await contentfulClient.getEntries({
+		content_type: 'blogPost',
+		'fields.slug': slug
+	});
 
-    return {
-        postsData,
-        postID,
-        leagueTeamManagersData,
-    };
+	if (!blogPost.items.length) {
+		throw new Error('Blog post not found');
+	}
+
+	const post = blogPost.items[0].fields;
+
+	// 🎯 PASS TITLE TO LAYOUT FOR iMessage
+	return {
+		title: post.title,  // ← THIS IS YOUR MAGIC
+		post: post
+	};
 }
