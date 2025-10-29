@@ -7,8 +7,12 @@
     export let data;
     const {postsData, postID, leagueTeamManagersData} = data;
 
-	const post = postsData.filter(p => p.sys.id === postID)[0];
-	$pageTitle = `${post.fields.title} | ${leagueName}`;
+	if (postsData && postsData.length > 0) {
+		const post = postsData.filter(p => p.sys.id === postID)[0];
+		if (post) {
+			$pageTitle = `${post.fields.title} | ${leagueName}`;
+		}
+	}
 </script>
 
 <style>
