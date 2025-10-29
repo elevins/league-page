@@ -19,6 +19,13 @@
 
 	$: pageTitle = blogTitle || "League Page";
 	$: fullTitle = `${pageTitle} | ${leagueName}`;
+
+	// ADD THIS LINE ONLY
+	$: if ($page.url.pathname.startsWith('/blog/') && typeof document !== 'undefined') {
+		const title = document.querySelector('h1')?.textContent || 'Blog Post';
+		document.title = `${title} | Chyones Fantasy League`;
+	}
+
 </script>
 
 <svelte:head>
