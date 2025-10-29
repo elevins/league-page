@@ -1,9 +1,14 @@
 <!-- src/routes/blog/[slug]/+page.svelte -->
 <script>
     import { FullPost } from "$lib/components";
+	import { leagueName } from '$lib/utils/helper';
+	import { pageTitle } from '$lib/stores';
 
     export let data;
     const {postsData, postID, leagueTeamManagersData} = data;
+
+	const post = postsData.posts.filter(p => p.sys.id === postID)[0];
+	$pageTitle = `${post.fields.title} | ${leagueName}`;
 </script>
 
 <style>

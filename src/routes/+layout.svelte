@@ -4,14 +4,15 @@
     import { dev } from '$app/environment';
     import { injectAnalytics } from '@vercel/analytics/sveltekit';
 	import { leagueName, leagueDescription, leagueImage, leagueURL } from '$lib/utils/helper';
+	import { pageTitle } from '$lib/stores';
  
     injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
-    <title>{leagueName}</title>
+    <title>{$pageTitle}</title>
     <meta name="description" content={leagueDescription} />
-    <meta property="og:title" content={leagueName} />
+    <meta property="og:title" content={$pageTitle} />
     <meta property="og:description" content={leagueDescription} />
     <meta property="og:image" content={leagueImage} />
     <meta property="og:url" content={leagueURL} />

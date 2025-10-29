@@ -1,7 +1,10 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
 	import { Rivalry } from '$lib/components'
-	import { waitForAll } from '$lib/utils/helper';
+	import { waitForAll, leagueName } from '$lib/utils/helper';
+	import { pageTitle } from '$lib/stores';
+
+	$pageTitle = `Rivalry | ${leagueName}`;
 
 	export let data;
 	const {

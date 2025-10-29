@@ -3,6 +3,9 @@
 	import { getNflState, leagueName, getAwards, getLeagueTeamManagers, homepageText, managers, gotoManager, enableBlog, waitForAll } from '$lib/utils/helper';
 	import { Transactions, PowerRankings, HomePost} from '$lib/components';
 	import { getAvatarFromTeamManagers, getTeamFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
+	import { pageTitle } from '$lib/stores';
+
+	$pageTitle = leagueName;
 
     const nflState = getNflState();
     const podiumsData = getAwards();

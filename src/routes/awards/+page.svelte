@@ -1,7 +1,10 @@
 <script>
 	import { Awards } from '$lib/components'
-	import { waitForAll } from '$lib/utils/helper';
+	import { waitForAll, leagueName } from '$lib/utils/helper';
 	import LinearProgress from '@smui/linear-progress';
+	import { pageTitle } from '$lib/stores';
+
+	$pageTitle = `Awards | ${leagueName}`;
 
     export let data;
     const {awardsData, teamManagersData} = data;

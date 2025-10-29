@@ -3,6 +3,10 @@
     import {AllManagers} from '$lib/components';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { leagueName } from '$lib/utils/helper';
+	import { pageTitle } from '$lib/stores';
+
+	$pageTitle = `Managers | ${leagueName}`;
 
 	export let data;
 	const {managers, leagueTeamManagersData} = data;

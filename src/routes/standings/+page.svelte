@@ -1,5 +1,9 @@
 <script>
 	import { Standings } from '$lib/components'
+	import { leagueName } from '$lib/utils/helper';
+	import { pageTitle } from '$lib/stores';
+
+	$pageTitle = `Standings | ${leagueName}`;
 
 	export let data;
 	const {standingsData, leagueTeamManagersData} = data;
