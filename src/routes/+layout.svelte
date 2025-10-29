@@ -23,7 +23,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Chyones League Page" />
 	<meta name="twitter:description" content="Custom Sleeper fantasy football league with standings, trades, power rankings, and more!" />
-	<meta name="twitter:image" content="https://chyones.com/static/League@20Page.png" />
+	<meta name="twitter:image" content="https://chyones.com/badge.png" />
 
 	<!-- Image size -->
 	<meta property="og:image:width" content="1200" />
