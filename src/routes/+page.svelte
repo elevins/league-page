@@ -10,9 +10,7 @@
             firstPostTitle: data.postsData?.[0]?.fields?.title
         });
     });
-</script>
 
-<script>
 	import LinearProgress from '@smui/linear-progress';
 	import { getNflState, leagueName, getAwards, getLeagueTeamManagers, homepageText, managers, gotoManager, enableBlog, waitForAll } from '$lib/utils/helper';
 	import { Transactions, PowerRankings, HomePost} from '$lib/components';
