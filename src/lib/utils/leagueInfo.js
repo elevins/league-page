@@ -1,6 +1,9 @@
 /*   STEP 1   */
 export const leagueID = "1257072581240946688"; // your league ID
 export const leagueName = "NYC + SF Fantasy Football"; // your league name
+export const leagueDescription = "The official site for the NYC + SF Fantasy Football League.";
+export const leagueImage = "https://chyones.com/badge.png";
+export const leagueURL = "https://chyones.com";
 export const dues = 200; // (optional) used in template constitution page
 export const dynasty = false; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
