@@ -1,12 +1,16 @@
-// src/routes/blog/[slug]/+page.js
-export function load({ data }) {
-	const { postsData, postID } = data;
 
-	// Find the current post by postID
-	const currentPost = postsData.find(p => p.sys.id === postID);
+import { enableBlog, getBlogPosts, getLeagueTeamManagers } from '$lib/utils/helper';
 
-	// Return the real title
-	return {
-		title: currentPost?.fields?.title || "Blog Post"
-	};
+export function load({ fetch, params }) {
+    if(!enableBlog) return false;
+    
+    const postID = params.slug;
+    const postsData = getBlogPosts(fetch);
+    const leagueTeamManagersData = getLeagueTeamManagers();
+
+    return {
+        postsData,
+        postID,
+        leagueTeamManagersData,
+    };
 }
