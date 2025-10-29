@@ -1,15 +1,12 @@
 // src/routes/blog/[slug]/+page.js
-// NO IMPORTS NEEDED — post is already in +page.svelte
-
 export function load({ data }) {
-	// `data` comes from +page.svelte (SvelteKit passes it automatically)
-	const { post } = data;
+	const { postsData, postID } = data;
 
-	if (!post?.title) {
-		return { title: "Blog Post" };
-	}
+	// Find the current post by postID
+	const currentPost = postsData.find(p => p.sys.id === postID);
 
+	// Return the real title
 	return {
-		title: post.title  // ← THIS IS YOUR BLOG TITLE
+		title: currentPost?.fields?.title || "Blog Post"
 	};
 }
