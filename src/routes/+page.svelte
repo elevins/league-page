@@ -1,27 +1,19 @@
 <!-- src/routes/blog/[slug]/+page.svelte -->
 <script>
     import { FullPost } from "$lib/components";
-    import { onMount } from 'svelte';
 
     export let data;
     const { postsData, postID, leagueTeamManagersData } = data;
 
-    // -------------------------------------------------
-    // TEMPORARY DEBUG – REMOVE AFTER WE SEE THE LOG
-    // -------------------------------------------------
-    onMount(() => {
+    // DEBUG: PRINTS WHEN DATA IS READY
+    $: if (data && postID && postsData) {
         console.log('BLOG DATA:', {
             postID,
-            postsData,
-            firstPostSlug: postsData?.[0]?.fields?.slug,
-            firstPostTitle: postsData?.[0]?.fields?.title,
-            firstPostSysId: postsData?.[0]?.sys?.id,
-            // show a few more entries if you have many
-            secondPostSlug: postsData?.[1]?.fields?.slug,
-            secondPostTitle: postsData?.[1]?.fields?.title
+            postsDataLength: postsData?.length,
+            firstPost: postsData?.[0],
+            foundPost: postsData?.find(p => p?.fields?.slug === postID)
         });
-    });
-    // -------------------------------------------------
+    }
 </script>
 
 <style>
