@@ -14,7 +14,7 @@
 	<!-- iMessage Rich Preview -->
 	<meta property="og:title" content="Chyones League Page" />
 	<meta property="og:description" content="Custom Sleeper fantasy football league with standings, trades, power rankings, and more!" />
-	<meta property="og:image" content="https://chyones.com/static/League@20Page.png" />
+	<meta property="og:image" content="https://chyones.com/badge.png" />
 	<meta property="og:url" content={$page.url.href} />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Chyones League Page" />
