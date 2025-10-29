@@ -10,14 +10,13 @@
 	// HARDCODED (SAFE)
 	const leagueName = "Chyones Fantasy League";
 	const description = "Custom Sleeper league with standings, trades, power rankings, and more!";
-	const imageUrl = "https://chyones.com/badge.png";  // ← YOUR IMAGE
+	const imageUrl = "https://chyones.com/badge.png";
 
 	// DYNAMIC: Get title from page's load() → $page.data.title
 	$: pageTitle = $page.data.title || "League Page";
 	$: fullTitle = pageTitle !== "League Page" ? `${pageTitle} | ${leagueName}` : leagueName;
 </script>
 
-<!-- ONE AND ONLY <svelte:head> -->
 <svelte:head>
 	<title>{fullTitle}</title>
 
@@ -37,4 +36,11 @@
 
 	<!-- Image size (helps iMessage) -->
 	<meta property="og:image:width" content="1200" />
-	<meta property="og
+	<meta property="og:image:height" content="630" />
+</svelte:head>
+
+<main>
+	<Nav />
+	<slot />
+	<Footer />
+</main>
