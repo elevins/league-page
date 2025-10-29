@@ -10,23 +10,23 @@
 </script>
 
 <svelte:head>
-	<title>{leagueInfo.name} - League Page</title>
+	<title>{your_league_name} - League Page</title>
 
-	<!-- iMessage / Social Rich Preview -->
-	<meta property="og:title" content={leagueInfo.name} />
-	<meta property="og:description" content={leagueInfo.homepageText || "Custom Sleeper fantasy football league page with standings, trades, power rankings, and more!"} />
+	<!-- iMessage / Social Preview -->
+	<meta property="og:title" content={your_league_name} />
+	<meta property="og:description" content={homepageText?.replace(/\n/g, ' ').slice(0, 200) + '...' || "Sleeper fantasy football league with standings, trades, and more!"} />
 	<meta property="og:image" content="https://chyones.com/static/League@20Page.png" />
 	<meta property="og:url" content={$page.url.href} />
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content={leagueInfo.name} />
+	<meta property="og:site_name" content={your_league_name} />
 
-	<!-- Twitter Card (iMessage uses this too) -->
+	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={leagueInfo.name} />
-	<meta name="twitter:description" content={leagueInfo.homepageText || "Custom Sleeper fantasy football league page with standings, trades, power rankings, and more!"} />
+	<meta name="twitter:title" content={your_league_name} />
+	<meta name="twitter:description" content={homepageText?.replace(/\n/g, ' ').slice(0, 200) + '...' || "Sleeper fantasy football league with standings, trades, and more!"} />
 	<meta name="twitter:image" content="https://chyones.com/static/League@20Page.png" />
 
-	<!-- Force correct image size (optional but helps) -->
+	<!-- Image dimensions -->
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 </svelte:head>
