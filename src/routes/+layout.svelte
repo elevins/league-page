@@ -8,7 +8,7 @@
 	injectAnalytics({ mode: dev ? 'development' : 'production' });
 
 	// HARDCODED VALUES (SAFE)
-	const leagueName = "Chyones Fantasy League";
+	const leagueName = "NYC + SF Fantasy Football";
 	const description = "Custom Sleeper league with standings, trades, power rankings, and more!";
 	const imageUrl = "https://chyones.com/badge.png";
 
