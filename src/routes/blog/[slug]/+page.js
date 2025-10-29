@@ -1,24 +1,15 @@
 // src/routes/blog/[slug]/+page.js
-import { contentfulClient } from '$lib/contentful';
+// NO IMPORTS NEEDED — post is already in +page.svelte
 
-export async function load({ params }) {
-	const { slug } = params;
+export function load({ data }) {
+	// `data` comes from +page.svelte (SvelteKit passes it automatically)
+	const { post } = data;
 
-	// Fetch blog post from Contentful
-	const blogPost = await contentfulClient.getEntries({
-		content_type: 'blogPost',
-		'fields.slug': slug
-	});
-
-	if (!blogPost.items.length) {
-		throw new Error('Blog post not found');
+	if (!post?.title) {
+		return { title: "Blog Post" };
 	}
 
-	const post = blogPost.items[0].fields;
-
-	// 🎯 PASS TITLE TO LAYOUT FOR iMessage
 	return {
-		title: post.title,  // ← THIS IS YOUR MAGIC
-		post: post
+		title: post.title  // ← THIS IS YOUR BLOG TITLE
 	};
 }
