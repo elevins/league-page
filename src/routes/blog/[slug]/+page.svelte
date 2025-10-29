@@ -1,29 +1,10 @@
 <!-- src/routes/blog/[slug]/+page.svelte -->
 <script>
     import { FullPost } from "$lib/components";
-    import { page } from '$app/stores';  // ← ADD THIS
 
     export let data;
-    const { postsData, postID, leagueTeamManagersData } = data;
-
-    // Find the current post by slug
-    $: currentPost = postsData.find(p => p.fields.slug === postID);
-    $: title = currentPost?.fields?.title || "Blog Post";
-    $: fullTitle = `${title} | Chyones Fantasy League`;
+    const {postsData, postID, leagueTeamManagersData} = data;
 </script>
-
-<!-- SET TITLE + OG TAGS HERE (per-page) -->
-<svelte:head>
-    <title>{fullTitle}</title>
-    <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content="Custom Sleeper league with standings, trades, power rankings, and more!" />
-    <meta property="og:image" content="https://chyones.com/badge.png" />
-    <meta property="og:url" content={$page.url.href} />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-</svelte:head>
 
 <style>
     #main {
