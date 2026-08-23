@@ -265,13 +265,17 @@
     <h3 bind:this={fiveOne}>5.1 League Tanking Policy</h3>
     <p>No team may intentionally leave starting roster spots empty. Any evidence of intentionally leaving roster spots empty in order to improve your draft position may be subject to punishment, including but not limited to the forfeiture of draft selections.</p>
 
-    <h2 class="sectionHeading" bind:this={six}>Section 6 Replacing Managers</h2>
+    <h2 class="sectionHeading" bind:this={six}>Section 6 Punishments</h2>
     
-    <h3 bind:this={sixOne}>6.1 Removing Managers</h3>
-    <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league chat, trade offers, and the waiver wire, is strongly encouraged but not grounds for removal.</p>
+    <h3 bind:this={sixOne}>6.1 Draft Dodging</h3>
+    <p>SFirst offense: Forgiven</p>
+    <p>Second miss: Beer mile before the draft<p>
+    <p>Third miss: League removal and replacement</p>
+
+    <p>The draft will be scheduled two weeks before labor day weekend every year. If someone can't make the draft theie respective punishment before draft day. If not they must inform the league with sufficient time to replace them.</p>
     
-    <h3 bind:this={sixTwo}>6.2 Replacing Managers</h3>
-    <p>When a manager needs to be replaced, the league will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to participate and will be very active within the league.</p>
+    <h3 bind:this={sixTwo}>6.2 League Punishment</h3>
+    <p>League season punishment punishment must be completed BEFORE the draft. Failure to complete results in being removed from the league and replaced.</p>
 
     <h2 class="sectionHeading" bind:this={seven}>Section 7 League Finances</h2>
     
