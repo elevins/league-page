@@ -134,7 +134,6 @@
     
         <h4 class="noUnderscore clickable" onclick={() => goToSection(sixOne)}>6.1 Removing Managers</h4>
         <h4 class="noUnderscore clickable" onclick={() => goToSection(sixTwo)}>6.2 Replacing Managers</h4>
-        <h4 class="noUnderscore clickable" onclick={() => goToSection(sixThree)}>6.3 Replacement Incentive</h4>
 
     <h3 class="noUnderscore clickable" onclick={() => goToSection(seven)}>Section 7: League Finances</h3>
     
@@ -237,7 +236,10 @@
     <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
     
     <h3 bind:this={twoOne}>2.1 Draft Order</h3>
-    <p>The draft order each year will be decided by teams choosing their position in reverse order of their post season finish.</p>
+    <p>The draft order will be decided by a drinking game at the draft. Those not in attendance will forfeit the game and pick last (at random if multiple).<p>
+    <p>The game will be decided on the trip by the league loser who plans the trip.<p>
+    <p>Then a short break (~30 mins) for commissioner to set keepers and the draft will commence.<p>
+    <p>League loser who plans the trip will be required to coordinate with commissioner to ensure game and draft are sufficiently organized on the trip.</p>
 
     <h3 bind:this={twoTwo}>2.2 Keeper Rules</h3>
     <p>See https://www.chyones.com/blog/44BGBZ1QblspYaq9fMCWeE</p>
@@ -269,10 +271,7 @@
     <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league chat, trade offers, and the waiver wire, is strongly encouraged but not grounds for removal.</p>
     
     <h3 bind:this={sixTwo}>6.2 Replacing Managers</h3>
-    <p>When a manager needs to be replaced, the commisiooners will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to participate and will be very active within the league.</p>
-    
-    <h3 bind:this={sixThree}>6.3 Replacement Incentive</h3>
-    <p>In the event that a manager chooses to quit the league or is removed by a comissioner, an incoming manager is offered a 50% reductioon on their first year buy-in.</p>
+    <p>When a manager needs to be replaced, the league will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to participate and will be very active within the league.</p>
 
     <h2 class="sectionHeading" bind:this={seven}>Section 7 League Finances</h2>
     
